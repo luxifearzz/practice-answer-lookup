@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="th">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Practice Answer Viewer</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div class="container">
+            <h2>ค้นหาคำตอบจาก practice id</h2>
+
+            <form id="practice-form">
+                <input
+                    type="number"
+                    id="practice-id"
+                    placeholder="กรอก Practice ID"
+                    required
+                />
+                <button type="submit">ดึงข้อมูล</button>
+            </form>
+
+            <div id="result" class="result-box"></div>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
