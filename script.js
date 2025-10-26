@@ -26,12 +26,12 @@ document
             const practice = data[0];
             const htmlResult = [];
 
-            practice.questions.forEach((q) => {
+            practice.questions.forEach((idx, q) => {
                 const correct = q.answers.find((a) => a.option === "true");
 
                 htmlResult.push(`
         <div class="question-card">
-          <div><strong>Q:</strong> ${q.question}</div>
+          <div><strong>Q${idx+1}:</strong> ${q.question}</div>
           ${
               correct
                   ? `<div class="correct-answer">✅ คำตอบที่ถูก: ${correct.answer}</div>`
