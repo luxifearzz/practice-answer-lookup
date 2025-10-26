@@ -26,7 +26,7 @@ document
             const practice = data[0];
             const htmlResult = [];
 
-            practice.questions.forEach((idx, q) => {
+            practice.questions.forEach((q, idx) => {
                 const correct = q.answers.find((a) => a.option === "true");
 
                 htmlResult.push(`
